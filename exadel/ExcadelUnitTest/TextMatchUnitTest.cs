@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ExadelUnitTest
+namespace TextMatchUnitTest
 {
     [TestClass]
     public class UnitTest1
