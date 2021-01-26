@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExadelLibrary
+﻿namespace ExadelLibrary
 {
     public class InputText
     {
-        public string Text { get; set; }
+        public string Text { get; private set; }
+        public string SubText { get; private set; }
+
+        public InputText(string text, string subText)
+        {
+            Text = text;
+            SubText = subText;
+        }
     }
+
 }
