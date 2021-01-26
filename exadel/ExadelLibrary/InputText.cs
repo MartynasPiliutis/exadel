@@ -2,14 +2,15 @@
 {
     public class InputText
     {
-        public string Text { get; private set; }
-        public string SubText { get; private set; }
+        public string InputToCheck { get; private set; }
+        public int InputCharNo { get; private set; }
 
-        public InputText(string text, string subText)
+        public InputText(string inputToCheck, int inputCharNo)
         {
-            Text = text;
-            SubText = subText;
+            InputToCheck = inputToCheck;
+            InputCharNo = inputCharNo;
         }
     }
+
 
 }

@@ -4,8 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextMatch", "exadel\TextMatch.csproj", "{1FFB4347-D376-4602-B644-C3989F4D398A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1E0655A7-6E57-4862-9A77-3F65B1320BAE} = {1E0655A7-6E57-4862-9A77-3F65B1320BAE}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYextMatchUnitTest", "ExcadelUnitTest\TYextMatchUnitTest.csproj", "{A14DE5A4-BDC8-4D43-9FCD-C45C6500255C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextMatchUnitTest", "ExcadelUnitTest\TextMatchUnitTest.csproj", "{A14DE5A4-BDC8-4D43-9FCD-C45C6500255C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1E0655A7-6E57-4862-9A77-3F65B1320BAE} = {1E0655A7-6E57-4862-9A77-3F65B1320BAE}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextMatchLibrary", "ExadelLibrary\TextMatchLibrary.csproj", "{1E0655A7-6E57-4862-9A77-3F65B1320BAE}"
 EndProject

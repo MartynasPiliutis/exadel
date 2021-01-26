@@ -1,47 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
+using TextMatchLibrary;
 
 namespace TextMatch
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string text1 = "";
-            string subText1 = "";
+            InputTextRepository InputTextRepository = new InputTextRepository();
+            List<OutputText> OutputList = new List<OutputText>();
+            string text = "";
+            string subText = "";
+            string error = "There is no output";
+            Console.Write("Enter your Text: ");
+            text = Console.ReadLine();
 
-            Console.Write("Text1: ");
-            text1 = Console.ReadLine();
+            Console.Write("Enter your Sub-Text: ");
+            subText = Console.ReadLine();
 
-            Console.Write("SubText1: ");
-            subText1 = Console.ReadLine();
+            InputTextRepository.BuildTheList(text, subText);
+            OutputList = InputTextRepository.BuildMatchList(subText);
 
-            List<string> Input = new List<string>();
-            string textHold = text1;
-            string rezult = "";
-            int lenght = subText1.Length;
-            int count = 1;
-            foreach (var item in text1)
+
+            Console.WriteLine("The result:");
+            Console.WriteLine("Your text: " + text);
+            Console.WriteLine("Your sub-text: " + subText);
+            Console.Write("The output: ");
+            if (OutputList.Count == 0)
             {
-                string textHoldTemp = "";
-                foreach (var item1 in textHold)
+                Console.Write(error);
+            }
+            else
+            {
+                foreach (var item in OutputList)
                 {
-                    if (count <= lenght)
-                    {
-                        rezult = rezult + item1;
-                    }
-                    else
-                    {
-                        textHoldTemp = textHoldTemp + item1;
-                    }
-                    count++;
+                    Console.Write(item.CharNo + " ");
                 }
-                textHold = textHoldTemp;
-
-                Console.WriteLine(rezult);
-                Console.WriteLine(textHoldTemp);
             }
             Console.ReadLine();
         }
+
     }
 }
