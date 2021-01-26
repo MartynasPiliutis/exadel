@@ -1,7 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace ExcadelUnitTest
+namespace ExadelUnitTest
 {
     [TestClass]
     public class UnitTest1
