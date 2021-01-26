@@ -1,4 +1,4 @@
-﻿namespace ExadelLibrary
+﻿namespace TextMatchLibrary
 {
     public class InputText
     {
